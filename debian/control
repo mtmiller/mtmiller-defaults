@@ -1,0 +1,135 @@
+Source: mtmiller-defaults
+Section: metapackages
+Priority: optional
+Maintainer: Mike Miller <mtmiller@debian.org>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/users/mtmiller/mtmiller-defaults.git
+Vcs-Browser: https://anonscm.debian.org/cgit/users/mtmiller/mtmiller-defaults.git
+
+Package: mtmiller-base
+Architecture: all
+Depends: bash-completion, byobu, debian-goodies, lsb, ${misc:Depends}
+Description: commonly installed Debian system packages
+ This package installs mtmiller's base Debian system configuration.
+ .
+ This is a dependency package that installs common system packages.
+
+Package: mtmiller-debian-dev
+Architecture: all
+Depends: devscripts,
+         dpkg-dev,
+         dput-ng,
+         lintian,
+         packaging-dev,
+         sbuild,
+         ubuntu-dev-tools,
+         ${misc:Depends}
+Recommends: dgit, git-buildpackage
+Description: development tools useful for working with Debian packages
+ This package installs mtmiller's Debian development environment.
+ .
+ This is a dependency package that installs Debian development tools.
+
+Package: mtmiller-desktop
+Architecture: all
+Depends: gnome-core, xorg, ${misc:Depends}
+Recommends: gnome, iceweasel, terminator, vim-gnome
+Description: default desktop environment and applications
+ This package installs mtmiller's preferred desktop environment.
+ .
+ This is a dependency package that installs the GNOME desktop and
+ related programs.
+
+Package: mtmiller-framework-dev
+Architecture: all
+Depends: gnome-platform-devel,
+         libboost-all-dev,
+         python-all-dev,
+         python3-all-dev,
+         qt4-dev-tools,
+         ${misc:Depends}
+Suggests: gnome-dbg, libboost-dbg, libqt4-dbg, python-all-dbg, python3-all-dbg
+Description: large framework development libraries and tools
+ This package installs mtmiller's frequently used big "framework"
+ libraries and packages used for development with those frameworks.
+ .
+ This is a dependency package that installs development libraries.,
+
+Package: mtmiller-generic-dev
+Architecture: all
+Depends: asciidoc,
+         autoconf,
+         automake,
+         build-essential,
+         colordiff,
+         diffstat,
+         gdb,
+         git,
+         libtool,
+         linux-perf,
+         ltrace,
+         mercurial,
+         patchutils,
+         strace,
+         valgrind,
+         ${misc:Depends}
+Recommends: meld
+Description: generically useful development tools and libraries
+ This package installs mtmiller's selection of generically useful
+ development tools and libraries.
+ .
+ This is a dependency package that installs development packages.
+
+Package: mtmiller-octave-dev
+Architecture: all
+Depends: automake,
+         bison,
+         desktop-file-utils,
+         epstool,
+         flex,
+         gawk,
+         gfortran,
+         ghostscript,
+         gnuplot5 | gnuplot,
+         gperf,
+         icoutils,
+         less,
+         libarpack2-dev,
+         libblas-dev,
+         libcurl4-gnutls-dev | libcurl4-dev,
+         libfftw3-dev,
+         libfltk1.3-dev,
+         libfontconfig1-dev,
+         libgl2ps-dev,
+         libglpk-dev,
+         libgraphicsmagick++1-dev,
+         libhdf5-dev,
+         liblapack-dev,
+         libncurses5-dev,
+         libosmesa6-dev,
+         libpcre3-dev,
+         libqhull-dev,
+         libqrupdate-dev,
+         libqscintilla2-dev,
+         libqt4-dev,
+         libqt4-opengl-dev,
+         libreadline-dev,
+         librsvg2-bin,
+         libsndfile1-dev,
+         libsuitesparse-dev,
+         libxft-dev,
+         portaudio19-dev,
+         pstoedit,
+         texinfo,
+         texlive,
+         texlive-fonts-recommended,
+         texlive-generic-recommended,
+         transfig,
+         ${misc:Depends}
+Recommends: default-jdk, octave-pkg-dev, xvfb
+Description: development tools and libraries for working on GNU Octave
+ This package installs mtmiller's GNU Octave development environment.
+ .
+ This is a dependency package that installs Octave development tools and
+ libraries.
