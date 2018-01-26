@@ -38,13 +38,14 @@ Description: development tools useful for working with Debian packages
 
 Package: mtmiller-desktop
 Architecture: all
-Depends: gnome-core,
-         xorg,
+Depends: desktop-base,
+         gnome-core,
+         xdg-user-dirs,
+         xdg-utils,
          ${misc:Depends}
 Recommends: gnome,
-            iceweasel,
             terminator,
-            vim-gnome
+            vim-gtk3
 Description: default desktop environment and applications
  This package installs mtmiller's preferred desktop environment.
  .
