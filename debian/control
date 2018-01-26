@@ -54,17 +54,17 @@ Description: default desktop environment and applications
 
 Package: mtmiller-framework-dev
 Architecture: all
-Depends: gnome-platform-devel,
-         libboost-all-dev,
+Depends: gnome-common,
+         gnome-platform-devel,
+         libgirepository1.0-dev,
          python-all-dev,
          python3-all-dev,
-         qt4-dev-tools,
+         qtbase5-dev,
+         qtbase5-dev-tools,
+         qttools5-dev,
+         qttools5-dev-tools,
          ${misc:Depends}
-Suggests: gnome-dbg,
-          libboost-dbg,
-          libqt4-dbg,
-          python-all-dbg,
-          python3-all-dbg
+Recommends: gnome-builder
 Description: large framework development libraries and tools
  This package installs mtmiller's frequently used big "framework"
  libraries and packages used for development with those frameworks.
