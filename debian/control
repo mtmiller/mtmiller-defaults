@@ -150,7 +150,7 @@ Depends: automake,
          zlib1g-dev,
          ${misc:Depends}
 Recommends: default-jdk,
-            octave-pkg-dev
+            dh-octave
 Description: development tools and libraries for working on GNU Octave
  This package installs mtmiller's GNU Octave development environment.
  .
